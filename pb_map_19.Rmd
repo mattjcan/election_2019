@@ -1,0 +1,49 @@
+---
+title: "2019 Federal election"
+subtitle: 
+author: 
+date: 
+output:
+  xaringan::moon_reader:
+    css: ["default", "libs/mjc-css/mjc-theme.css", "libs/mjc-css/mjc-fonts.css"]
+    lib_dir: libs
+    nature:
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+---
+
+```{r global_options, include=FALSE}
+
+knitr::opts_chunk$set(fig.width=7, fig.height=5, echo=FALSE, warning=FALSE, message=FALSE, dpi = 300)
+
+library(knitr)
+
+source("election_2019.R")
+
+```
+
+
+# LNP TPP vote by polling booth
+
+```{r }
+frameWidget(m_aus_tpp, width='100%', height = '450px')
+```
+
+---
+
+# TPP swing to the LNP by polling booth
+
+```{r }
+frameWidget(m_aus, width='100%', height = '450px')
+```
+
+---
+
+# One Nation primary vote by polling booth
+
+```{r }
+frameWidget(m_on, width='100%', height = '450px')
+```
+
+
